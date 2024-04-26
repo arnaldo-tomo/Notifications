@@ -20,6 +20,7 @@ export default function App() {
   const notificationListener = useRef();
   const responseListener = useRef();
   const [tamanhoDosDados, setTamanhoDosDados] = useState(0);
+  
   useEffect(() => {
     registerForPushNotificationsAsync().then(token => setExpoPushToken(token));
 
